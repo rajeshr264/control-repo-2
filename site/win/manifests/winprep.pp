@@ -18,6 +18,11 @@ class win::winprep {
   provider => 'chocolatey',
   }
 
+  package {'googlechrome':
+  ensure   => installed,
+  provider => 'chocolatey',
+  }
+  
   windowsfeature {'NET-Framework-Core':
     ensure => present,
 }
