@@ -12,6 +12,11 @@ class win::winprep {
   ensure   => installed,
   provider => 'chocolatey',
   }
+  
+  package {'notepadplusplus':
+  ensure   => installed,
+  provider => 'chocolatey',
+  }
 
   windowsfeature {'NET-Framework-Core':
     ensure => present,
