@@ -8,10 +8,10 @@ class win::winprep {
     provider => 'chocolatey',
   }
 
-  package {'Firefox':
-  ensure   => installed,
-  provider => 'chocolatey',
-  }
+ # package {'Firefox':
+ # ensure   => installed,
+ # provider => 'chocolatey',
+ # }
   
  # package {'notepadplusplus':
  # ensure   => installed,
