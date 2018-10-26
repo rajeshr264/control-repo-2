@@ -7,7 +7,7 @@ class win::winreg {
   registry_value { 'HKLM\System\CurrentControlSet\Services\Puppet01\Description':
   ensure =>  present,
   type   => string,
-  data   => 'some junk data',
+  data   => 'TestData ',
   }
 
   registry::value { 'Description':
